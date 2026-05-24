@@ -1,0 +1,29 @@
+<template>
+    <!--Methods & Two Way Data Binding-->
+    <lightning-card title = "Two Way Binding">
+        <div class="slds-m-around_x-small">
+        <lightning-input type="text"
+            label = "Enter your text Here"
+            onkeyup={dataHandler}  
+        >
+        </lightning-input>
+        </div>
+        <p> This is an example for {fullname} with {title}</p>
+        </lightning-card>
+
+        <lightning-card title = "@Track Property Example">
+        <div class="slds-m-around_x-small">
+        <lightning-input type="text"
+            label = "Enter your text Here"
+            onkeyup={trackDataHandler}  
+        >
+        </lightning-input>
+        </div>
+        <p>This is an example for Track Decorator property {mydata.Country}</p>
+    </lightning-card>
+
+    <lightning-card title = "Getter Example">
+        <p>This is an example for getter {data}</p>
+    </lightning-card>
+
+</template>
